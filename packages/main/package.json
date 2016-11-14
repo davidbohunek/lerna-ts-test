@@ -1,0 +1,8 @@
+{
+  "name": "@test/main",
+  "version": "1.1.0",
+  "dependencies": {
+    "@test/types": "^1.0.0",
+    "@test/utils": "^1.0.0"
+  }
+}

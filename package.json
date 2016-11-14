@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "build": "lerna exec -- tsc",
+    "cleanup": "lerna exec -- find . -name '*.js' -delete  -o -name '*.d.ts' -delete  -o -name '*.js.map' -delete",
+    "version": "lerna publish --skip-npm --skip-git",
+    "postinstall": "lerna exec -- lerna bootstrap"
+  },
+  "devDependencies": {
+    "lerna": "2.0.0-beta.30",
+    "typescript": "^2.0.9"
+  }
+}
