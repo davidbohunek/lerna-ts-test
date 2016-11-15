@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "build": "lerna exec -- tsc",
+    "build": "npm run cleanup && npm run compile",
+    "compile": "tsc",
     "cleanup": "lerna exec -- find . -name '*.js' -delete  -o -name '*.d.ts' -delete  -o -name '*.js.map' -delete",
     "version": "lerna publish --skip-npm --skip-git",
     "postinstall": "lerna exec -- lerna bootstrap"
